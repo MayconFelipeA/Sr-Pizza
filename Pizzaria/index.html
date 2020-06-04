@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sr Pizza</title>
+
+    <link rel="shortcut icon" href="img/pizzas_animation/pizza_1.png">
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header class="bg-warning cabecalho-container border-bottom border-danger">
+        <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <div class="container-md pt-5 pb-5 text-center">
+            <span><img src="img/chapeu.png" width="150" height="150"></span>
+            <h1 class="display-1">
+                Sr Pizza
+            </h1>
+            <h3 class="text-center display-4">e Bebidas</h3>
+        </div>
+
+        <h3 class="text-center">Disque: (00) 00000-0000</h3>
+    </header>
+
+    <!-- Seção -->
+    <section class="bg-danger section-second border-bottom border-primary imagem-rodape">
+
+        <!-- Titulo -->
+        <div class="mb-4 bg-dark">
+            <h1 class="text-center display-4 text-white">
+                As melhores <span class="text-warning">Pizzas</span> da região.
+            </h1>
+            <hr>
+        </div>
+
+        <!-- Imagens das pizza -->
+        <div class="container">
+            <div class="row">
+                <!-- Slider -->
+                <div id="carouselIndicators" class="carousel slide col-sm-12" data-rider="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                        <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner rounded">
+                        <div class="carousel-item active">
+                            <img class="d-block w-100" src="img/pizza1.jpg" width="360" height="450"
+                                alt="Pizza Calabresa com Queijo">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/pizza2.jpg" width="360" height="450"
+                                alt="Pizza Calabresa com Queijo">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/pizza3.jpg" width="360" height="450"
+                                alt="Pizza Calabresa com Queijo">
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="img/pizza4.jpg" width="360" height="450"
+                                alt="Pizza Calabresa com Queijo">
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Anterior</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon color-success" aria-hidden="true"></span>
+                            <span class="sr-only">Próximo</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary section-container">
+        <div class="bg-light">
+            <h1 class="text-center pt-3 pb-3">
+                Cardápio
+            </h1>
+        </div>
+
+        <div class="Cardapio container-sm mt-5">
+            <h2 class="text-center text-light mb-3">Pizzas</h2>
+            <p class="text-center">
+                <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapsePizzas"
+                    role="button" aria-expanded="false" aria-controls="collapsePizzas">
+                    Mostrar Pizzas
+                </button>
+            </p>
+            <div class="collapsing" aria-expanded="false" id="collapsePizzas">
+                <table class="table table-striped table-light">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-warning text-primary">
+                            <th>Pizza Frango</th>
+                            <td>R$ 12,00</td>
+                        </tr>
+                        <tr>
+                            <th>Pizza Frango com Catupiri, Cebola</th>
+                            <td>R$ 20,00</td>
+                        </tr>
+                        <tr class="bg-warning text-primary">
+                            <th>Pizza Bacon</th>
+                            <td>R$ 15,00</td>
+                        </tr>
+                        <tr>
+                            <th>Pizza Bacon com Queijo, Cebola</th>
+                            <td>R$ 25,00</td>
+                        </tr>
+                        <tr>
+                            <th>Pizza Bacon com Queijo, Catupiri, Cebola</td>
+                            <td>R$ 30,00</td>
+                        </tr>
+                        <tr class="bg-warning text-primary">
+                            <th>Pizza Queijo</th>
+                            <td>R$ 10,00</td>
+                        </tr>
+                        <tr>
+                            <th>Pizza Quejo com Catupiri</th>
+                            <td>R$ 15,00</td>
+                        </tr>
+                        <tr class="bg-warning text-primary">
+                            <th>Pizza Calabresa</th>
+                            <td>R$ 15,00</td>
+                        </tr>
+                        <tr>
+                            <th>Pizza Calabresa com Catupiri, Bacon</th>
+                            <td>R$ 32,00</td>
+                        </tr>
+                        <tr>
+                            <th>Pizza Calabresa com Catupiri, Frango</th>
+                            <td>R$ 35,00</td>
+                        </tr>
+                        <tr>
+                            <th>Pizza Calabresa com Catupiri, Queijo</th>
+                            <td>R$ 30,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h2 class="text-center text-light mt-5 mb-3">Bebidas</h2>
+            <p class="text-center">
+                <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#collapseBebidas"
+                    role="button" aria-expanded="false" aria-controls="collapseBebidas">
+                    Mostrar Bebidas
+                </button>
+            </p>
+            <div class="collapsing" aria-expanded="false" id="collapseBebidas">
+                <table class="table table-striped table-light">
+                    <thead class="thead-dark text-white">
+                        <tr>
+                            <th scope="col">Tipo</th>
+                            <th scope="col">Preço</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="bg-danger text-light">
+                            <th>Coca-Cola</th>
+                            <td>R$ 9,00</td>
+                        </tr>
+                        <tr class="bg-danger text-light">
+                            <th>Pepsi-Cola</th>
+                            <td>R$ 7,00</td>
+                        </tr>
+                        <tr class="bg-warning">
+                            <th>Refrico Guaraná</th>
+                            <td>R$ 4,00</td>
+                        </tr>
+                        <tr class="bg-warning">
+                            <th>Refrico Laranja</th>
+                            <td>R$ 4,00</td>
+                        </tr>
+                        <tr class="bg-warning">
+                            <th>Refrico Uva</th>
+                            <td>R$ 4,00</td>
+                        </tr>
+                        <tr class="bg-success">
+                            <th>Suco de Laranja</th>
+                            <td>R$ 5,00</td>
+                        </tr>
+                        <tr class="bg-success">
+                            <th>Suco de Uva</th>
+                            <td>R$ 5,00</td>
+                        </tr>
+                        <tr class="bg-success">
+                            <th>Suco de Maracuja</th>
+                            <td>R$ 5,00</td>
+                        </tr>
+                        <tr class="bg-success">
+                            <th>Suco de Limão</th>
+                            <td>R$ 5,00</td>
+                        </tr>
+                        <tr class="bg-success">
+                            <th>Suco de Manga</th>
+                            <td>R$ 5,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="section-container bg-dark text-white">
+        <div class="bg-light text-success">
+            <h1 class="text-center pt-3 pb-3">
+                Endereços
+            </h1>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mt-5">
+                        <h3>Escolha a unidade mais próxima e receba mais rápido!</h5>
+                            <hr class="bg-warning">
+                            <h5 class="mt-3">RuaAlmeida Ferraz 000 – Centro – Londrina (PR)</h5>
+                            <p class="lead">Número: (00) 00000-0000</p>
+
+                            <hr class="bg-warning">
+                            <h5 class="mt-3">Rua Almeida Ferraz 000 – Centro – Londrina (PR)</h5>
+                            <p class="lead">Número: (00) 00000-0000</p>
+
+                            <hr class="bg-warning">
+                            <h5 class="mt-3">Rua Almeida Ferraz 000 – Centro – Londrina (PR)</h5>
+                            <p class="lead">Número: (00) 00000-0000</p>
+
+                            <hr class="bg-warning">
+                            <h5 class="mt-3">Rua Almeida Ferraz 000 – Centro – Londrina (PR)</h5>
+                            <p class="lead">Número: (00) 00000-0000</p>
+                    </div>
+                </div>
+
+                <!-- Formulário -->
+                <div class="contato-container text-light col-md-6 mt-5">
+                    <h4>Faça seu pedido por Email.</h4>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-12">
+                                <label for="emailInput">Email</label>
+                                <input type="email" class="form-control" id="emailInput"
+                                    arial-describedby="emailPedidos" placeholder="Seu email" required>
+                                <small id="emailPedidos" class="form-text text-muted">Nunca vamos compartilhar seu
+                                    email,
+                                    com
+                                    ninguém.</small>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="nomeInput">Nome</label>
+                                <input type="text" class="form-control" id="nomeInput" arial-describedby="nomePedidos"
+                                    placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="sobrenomeInput">Sobrenome</label>
+                                <input type="text" class="form-control" id="sobrenomeInput"
+                                    arial-describedby="sobrenomePedidos" placeholder="Seu sobrenome" required>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="enderecoInput">Endereço</label>
+                                <input type="text" class="form-control" id="emailInput"
+                                    arial-describedby="enderecoPedidos" placeholder="Seu endereço, ex: Rua tal, nº 160."
+                                    required>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputCEP">CEP</label>
+                                <input type="text" class="form-control" id="inputCEP" required>
+                            </div>
+                            <div class="form-group col-md-8">
+                                <label for="inputTextArea">Pedido</label>
+                                <textarea class="form-control" id="inputTextArea" placeholder="Faça seu pedido"
+                                    required></textarea>
+                                <small id="inputTextArea" class="form-text text-muted">Por favor, olhe o
+                                    <span>Cardápio</span>
+                                    antes de enviar o pedido.</small>
+                            </div>
+                            <div class="form-group col-md-4">
+                                <label for="inputTel">Celular ou Telefone</label>
+                                <input type="tel" class="form-control" id="inputTel"
+                                    pattern="[0-9]({2}) [0-9]{5}-[0-9]{4}" placeholder="Celular ou Telefone" required>
+                                <small id="inputTextArea" class="form-text text-muted">Ex: (00) 00000-0000.</small>
+                            </div>
+                            <div class="form-group col-md-12">
+                                <button type="submit" class="btn btn-success">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="section-container bg-light">
+
+        <div class="container pt-5">
+            <h4 class="text-center">Sociais</h4>
+            <hr>
+            <div class="d-flex justify-content-center">
+                <a href="#">
+                    <img class="mr-5" src="img/social/facebook.png" width="25" height="25">
+                </a>
+                <a href="#">
+                    <img src="img/social/twitter.png" width="25" height="25">
+                </a>
+                <a href="#">
+                    <img class="ml-5" src="img/social/instagram.png" width="25" height="25">
+                </a>
+            </div>
+            <hr>
+            <p class="mb-0 text-center">Todos direitos reservados, Sr Pizza 2020 &copy;.<br>Por Maycon Felipe.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        $('.carousel').carousel({
+            interval: 1500
+        })
+    </script>
+</body>
+
+</html>
